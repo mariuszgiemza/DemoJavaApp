@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World Rotating</title>
+
+    <style>
+        .rotate {
+            display: inline-block;
+            font-size: 48px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            animation: spin 3s linear infinite;
+            color: #4CAF50;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+        }
+
+        body {
+            text-align: center;
+            margin-top: 120px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="rotate">Hello World</div>
+
+    <h2>Aktualna data i godzina:</h2>
+    <h3>${dateTime}</h3>
+
+</body>
+</html>
